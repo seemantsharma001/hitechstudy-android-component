@@ -1,6 +1,4 @@
-package com.org.hightechstudy.download;
-
-import androidx.annotation.Nullable;
+package com.org.hightechstudy.utility;
 
 import com.android.volley.NetworkResponse;
 import com.android.volley.Request;

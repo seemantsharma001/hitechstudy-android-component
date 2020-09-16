@@ -1,4 +1,4 @@
-package com.org.hightechstudy.leaderboard;
+package com.org.hightechstudy.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

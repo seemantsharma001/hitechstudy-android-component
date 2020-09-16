@@ -1,4 +1,4 @@
-package com.org.hightechstudy.upload;
+package com.org.hightechstudy.activity;
 
 import android.content.Intent;
 import android.net.Uri;

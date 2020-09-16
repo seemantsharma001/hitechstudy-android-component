@@ -1,13 +1,11 @@
-package com.org.hightechstudy.download;
+package com.org.hightechstudy.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
 import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -20,12 +18,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.Volley;
 import com.org.hightechstudy.R;
+import com.org.hightechstudy.utility.DownloadVideoRequest;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.InputStreamReader;
 
 public class DownloadActivity extends AppCompatActivity {
 

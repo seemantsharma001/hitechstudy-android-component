@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.org.hightechstudy">
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,17 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".leaderboard.LeadersBoardActivity">
+        <activity android:name=".activity.ParentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".upload.UploadActivity"/>
-        <activity android:name=".download.DownloadActivity" />
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".MainActivity" />
+
+        <activity android:name=".activity.LeadersBoardActivity"/>
+        <activity android:name=".activity.UploadActivity" />
+        <activity android:name=".activity.DownloadActivity" />
+        <activity android:name=".activity.ScreenRecorderDisableActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -31,9 +37,5 @@
                 android:resource="@xml/file_path" />
         </provider>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
